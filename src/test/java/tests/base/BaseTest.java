@@ -1,10 +1,7 @@
 package tests.base;
 
 import classesForTetsFrame.allPages.base.BasePage;
-import classesForTetsFrame.allPages.pages.ComputersPage;
-import classesForTetsFrame.allPages.pages.DesktopsPage;
-import classesForTetsFrame.allPages.pages.ItemPage;
-import classesForTetsFrame.allPages.pages.MainPage;
+import classesForTetsFrame.allPages.pages.*;
 import classesForTetsFrame.common.CommonActions;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -25,6 +22,8 @@ public class BaseTest {
     protected DesktopsPage desktopsPage = new DesktopsPage(driver);
 
     protected ItemPage itemPage = new ItemPage(driver);
+
+    protected SoppingCartPage soppingCartPage = new SoppingCartPage(driver);
 
     @AfterTest
     public void clearCookLocalStorage(){

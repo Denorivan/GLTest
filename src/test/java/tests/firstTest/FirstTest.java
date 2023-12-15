@@ -25,7 +25,7 @@ public class FirstTest extends BaseTest {
 
         itemPage
                 .clickAddToCartButton()
-                .checkTheItemIsInTheShoppingCart();
+                .clickAddToCartButtonWithRefresh();
 
     }
 }
